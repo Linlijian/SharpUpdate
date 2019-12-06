@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Xml;
 
 namespace SharpUpdate
 {
-    internal class SharpUpdateXml
+    public class SharpUpdateXml
     {
         private Version version;
         private Uri uri;
