@@ -42,7 +42,7 @@ namespace SharpUpdate
             catch { this.DialogResult = DialogResult.No; this.Close(); }
         }
 
-        void webClient_DownloadProgressChecnged(object sender, DownloadProgressChangedEventArgs e)
+        private void webClient_DownloadProgressChecnged(object sender, DownloadProgressChangedEventArgs e)
         {
             this.progressBar.Value = e.ProgressPercentage;
             this.lblProgress.Text = string.Format("Download {0} of {1}", e.BytesReceived, e.TotalBytesToReceive);
@@ -103,13 +103,13 @@ namespace SharpUpdate
             }
         }
 
-        void bgWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        private void bgWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             this.DialogResult = (DialogResult)e.Result;
             this.Close();
         }
 
-        void bgWorker_DoWork(object sender, DoWorkEventArgs e)
+        private void bgWorker_DoWork(object sender, DoWorkEventArgs e)
         {
             string file = ((string[])e.Argument)[0];
             string updateMd5 = ((string[])e.Argument)[1];
