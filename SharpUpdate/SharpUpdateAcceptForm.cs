@@ -8,6 +8,7 @@ namespace SharpUpdate
         private ISharpUpdatable applicationInfo;
         private SharpUpdateXml updateInfo;
         private SharpUpdateFornInfo updateInfoForm;
+        private SharpUpdateXml update;
 
         internal SharpUpdateAcceptForm()
         {
@@ -22,6 +23,12 @@ namespace SharpUpdate
                 this.Icon = this.applicationInfo.ApplicationIcon;
 
             this.lblUpdateAvali.Text = string.Format("New Version: {0}", this.updateInfo.Version.ToString());
+        }
+
+        public SharpUpdateAcceptForm(ISharpUpdatable applicationInfo, SharpUpdateXml update)
+        {
+            this.applicationInfo = applicationInfo;
+            this.update = update;
         }
 
         private void btnYes_Click(object sender, EventArgs e)

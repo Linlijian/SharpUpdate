@@ -68,6 +68,7 @@
     <Compile Include="SharpUpdateFornInfo.Designer.cs">
       <DependentUpon>SharpUpdateFornInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="SharpUpdater.cs" />
     <Compile Include="SharpUpdateXml.cs" />
   </ItemGroup>
   <ItemGroup>
