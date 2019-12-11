@@ -63,6 +63,26 @@ namespace SharpUpdate.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2c84550a547db5615f245e3f081ba951 {
+            get {
+                object obj = ResourceManager.GetObject("_2c84550a547db5615f245e3f081ba951", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cloud_upload_1 {
+            get {
+                object obj = ResourceManager.GetObject("cloud_upload_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cogs {
             get {
                 object obj = ResourceManager.GetObject("cogs", resourceCulture);

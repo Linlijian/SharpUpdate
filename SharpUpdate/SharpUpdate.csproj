@@ -50,6 +50,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SharpUpdateAcceptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SharpUpdateAcceptForm.Designer.cs">
+      <DependentUpon>SharpUpdateAcceptForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SharpUpdateDownloadForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="SharpUpdateAcceptForm.resx">
+      <DependentUpon>SharpUpdateAcceptForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SharpUpdateDownloadForm.resx">
       <DependentUpon>SharpUpdateDownloadForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,6 +90,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cogs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-mark-icon-in-flat-style-ok-accept-on-vector-22675230.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-8-Accept.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2c84550a547db5615f245e3f081ba951.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-upload-1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
